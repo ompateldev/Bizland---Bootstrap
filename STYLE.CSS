@@ -1,0 +1,475 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    background-color: #ffff;
+    z-index: 99;
+}
+
+nav a h1 {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+nav a h1 span {
+    color: #106eea;
+    font-size: 45px;
+}
+
+
+.collapse ul li {
+    font-size: 18px;
+    font-weight: 650;
+}
+
+
+.collapse ul li a:hover {
+    color: #106eea;
+}
+
+
+.bizland {
+    width: 100%;
+    float: left;
+    height: 80vh;
+    background-image: linear-gradient(rgba(238, 227, 227, 0), rgba(228, 222, 222, 0)), url(BizLand/assets/img/hero-bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.text-bizland a {
+    color: #222;
+    font-size: 20px;
+    margin-left: 10px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.text-bizland a i {
+    color: #106eea;
+    font-size: 26px;
+    margin: 0 10px;
+}
+
+.text-bizland {
+    margin-top: 50%;
+}
+
+.all-bizland h3 {
+    font-size: 26px;
+    padding: 12px 0;
+    color: #555;
+}
+
+.all-bizland h1 {
+    font-size: 43px;
+    font-weight: 700;
+}
+
+.all-bizland h1 span {
+    color: #106eea;
+}
+
+.featured {
+    width: 100%;
+    height: 66vh;
+    float: left;
+}
+
+.full .icon i {
+    font-size: 39px;
+    color: #106eea;
+}
+
+.full p {
+    color: #444;
+    font-size: 16px;
+
+}
+
+.full {
+    position: relative;
+    overflow: hidden;
+    background: #ffff;
+    border-radius: 10px;
+    z-index: 1;
+    transition: all 0.3s;
+}
+
+.full::before {
+    content: "";
+    position: absolute;
+    background: #106eea;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    top: 100%;
+    transition: all 0.3s;
+    z-index: -1;
+}
+
+.full:hover::before {
+    background: #106eea;
+    top: 0;
+    border-radius: 0px;
+}
+
+.full:hover i,
+.full:hover h5,
+.full:hover p {
+    color: #ffff;
+}
+
+/* ================================================================== */
+.about {
+    width: 100%;
+    float: left;
+    height: 144vh;
+    background-color: #f6f9fe;
+}
+
+.section-title p {
+    font-size: 13px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    padding: 8px 20px;
+    background: #e7f1fd;
+    color: #106eea;
+    border-radius: 50px;
+}
+
+.section-title h2 {
+    font-weight: 700;
+
+}
+
+.section-title h2 span {
+    color: #106eea;
+}
+
+.about-g .col-6 p {
+    color: #444;
+    font-style: italic;
+}
+
+.about-g .col-6 h3 {
+    padding-bottom: 10px;
+    font-weight: 600;
+}
+
+.progress-report {
+    width: 100%;
+    height: 50vh;
+    float: left;
+}
+
+.progress-report .progress {
+    height: 10px;
+    border-radius: 0px;
+}
+
+.counts-emoji i {
+    position: absolute;
+    transform: translateX(-50%);
+    font-size: 22px;
+    background: #106eea;
+    color: #fff;
+    border: 5px solid #fff;
+
+}
+
+.counts-text {
+    background-color: #c9daf7;
+
+}
+
+.counts-text h2 {
+    font-weight: 700;
+}
+
+.logo {
+    width: 100%;
+    /* height: 30vh; */
+    float: left;
+    background-color: #f6f9fe;
+
+}
+
+
+.logo-an .col-2:hover {
+    transform: scale(1.09);
+    transition: all linear 0.1s;
+}
+
+
+
+
+/*................................ service.............................. */
+
+
+.service {
+    width: 100%;
+}
+
+.text-box .icon-s {
+    background-color: #f1f6fe;
+}
+
+.service-title {
+    font-weight: 700;
+}
+
+.service-text-p {
+    color: #444;
+}
+
+
+.text-box:hover {
+    box-shadow: 1px 1px 10px;
+}
+
+.text-box:hover:hover h4 {
+    color: #106eea;
+}
+
+.slide-1 {
+    width: 100%;
+    height: 80vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.596), rgba(0, 0, 0, 0.486)), url(BizLand/assets/img/testimonials-bg.jpg);
+    background-size: cover;
+    float: left;
+
+}
+
+.test-img img {
+    border: 7px solid rgba(255, 255, 255, 0.181);
+
+}
+
+.test-h5 {
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 0.7px;
+    color: #fff;
+}
+
+.test-h6 {
+    color: #ddd;
+}
+
+.test-p {
+    letter-spacing: 0.7px;
+}
+
+.portfolio {
+    width: 100%;
+    float: left;
+}
+
+.port-text {
+    position: absolute;
+    opacity: 0;
+    bottom: 0%;
+    z-index: 99;
+    margin: auto;
+    color: #000;
+    color: #555555;
+    transition: all 0.5s;
+    left: 5%;
+    right: 5%;
+    text-align: center;
+    bottom: 5%;
+    
+}
+
+.a1:hover .port-text {
+    background-color: rgba(255, 255, 255, 0.9);
+    opacity: 1;
+}
+
+.port-text h4 {
+    color: #000;
+}
+
+
+.team {
+    width: 100%;
+    height: 100vh;
+    float: left;
+    background-color: #f6f9fe;
+}
+
+.team-text {
+    background-color: #fff;
+    width: 100%;
+}
+
+.team-text h4 {
+    padding-top: 16px;
+}
+
+.team-tital {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.team-text p {
+    font-size: 15px;
+    font-weight: 400;
+    color: #aaaaaa;
+}
+
+
+
+.icon-chefs {
+    opacity: 0;
+    position: relative;
+    bottom: 40%;
+    display: flex;
+    justify-content: center;
+    transition: all linear 0.3s;
+}
+
+
+.icon-chefs:hover {
+    opacity: 1;
+
+}
+
+.pricing {
+    width: 100%;
+    float: left;
+}
+
+.pricing-middal {
+    font-size: 35px;
+    font-weight: 700;
+    color: #106eea;
+}
+
+.pricing-middal span {
+    color: #bababa;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.pricing-text li {
+    padding: 6px 0;
+}
+
+.text-one {
+    color: #ccc;
+}
+
+.faq {
+    width: 100%;
+    float: left;
+    height: 130vh;
+    background-color: #f6f9fe;
+}
+
+.faq p :hover {
+    transition: all 1s;
+    color: #106eea;
+}
+
+.faq p i {
+    /* font-size: 40px; */
+    letter-spacing: 0.5px;
+    margin: 10px;
+    font-size: 20px;
+}
+
+.contect {
+    width: 100%;
+    float: left;
+}
+
+.contect-h6 {
+    color: #777777;
+    font-weight: 700;
+}
+
+.text-bio input {
+    padding: 10px;
+    margin: 10px;
+}
+
+.footer-newsletter {
+    width: 100%;
+    /* height: 30vh; */
+    float: left;
+    background-color: #f1f6fe;
+}
+
+.footer-h4 {
+    font-weight: 700;
+}
+
+.text-p {
+    color: #444;
+}
+
+form input {
+    padding: 10px;
+    margin: 0;
+}
+
+.footer-top {
+    width: 100%;
+    float: left;
+    height: 50vh;
+}
+
+.footer-top h4 span {
+    color: #106eea;
+    font-size: 36px;
+}
+
+.text-footer {
+    color: #777777;
+    line-height: 25px;
+}
+
+.footer-p {
+    color: #777777;
+    font-weight: 700;
+    
+}
+
+.footer-p span {
+    font-weight: 400;
+}
+
+.footer-top ul li{
+    color: #777777;
+    padding: 8px;
+    font-weight: 400;
+}
+
+.useful li:hover{
+    color: #106eea;
+   
+}
+
+.botom-1{
+    width: 100%;
+    float: left;
+    background-color:#f6f9fe ;
+}
+
+.bottom-text span{
+    font-weight: 700;
+}
+
+.a1{
+    position: relative;
+}
+
+
+
+
