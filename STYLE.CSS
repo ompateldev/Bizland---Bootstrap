@@ -201,7 +201,7 @@ nav a h1 span {
 
 
 .logo-an .col-2:hover {
-    transform: scale(1.09);
+    transform: scale(1.2);
     transition: all linear 0.1s;
 }
 
@@ -213,6 +213,7 @@ nav a h1 span {
 
 .service {
     width: 100%;
+    height: auto;
 }
 
 .text-box .icon-s {
@@ -230,6 +231,8 @@ nav a h1 span {
 
 .text-box:hover {
     box-shadow: 1px 1px 10px;
+    transform: scale(1.03);
+    transition: 0.5s;
 }
 
 .text-box:hover:hover h4 {
